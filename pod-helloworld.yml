@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: myapp-pod
+  name: eureka-pod
   labels:
-    app: myapp
+    app: eureka
 spec:
   containers:
-  - name: myapp-container
-    image: busybox
+  - name: eureka-container
+    image: rahulnehra477/eureka_server:v1
     command: ['sh', '-c', 'echo Hello Kubernetes! && sleep 3600']
